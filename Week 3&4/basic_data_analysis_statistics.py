@@ -6,7 +6,7 @@ import seaborn as sns
 # Load the Iris dataset
 data = sns.load_dataset('iris')
 
-# One-hot encode categorical columns (converts text to numbers for correlation analysis)
+# One-Hot encode categorical columns (converts text to numbers for correlation analysis)
 data_encoded = pd.get_dummies(data, columns=['species'])
 print("Data after one-hot encoding:")
 print(data_encoded.head())
