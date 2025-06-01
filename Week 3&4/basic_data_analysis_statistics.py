@@ -30,7 +30,7 @@ print(data_encoded.describe())
 # Get numerical columns
 numerical_cols = data_encoded.select_dtypes(include=[np.number]).columns.tolist()
 
-# Calculate mean, median, mode, and standard deviation for each numerical feature
+# Calculate Mean, Median, Mode, and standard deviation for each numerical feature
 for col in numerical_cols:
     print(f"\n{col}:")
     print(f"Mean: {data_encoded[col].mean():.3f}")
